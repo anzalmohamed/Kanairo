@@ -1,0 +1,33 @@
+{{#partial "title" }}
+    matatu
+{{/partial}}
+
+
+{{#partial "content"}}
+    <div class="card mt-5 mb-3" style="max-width: 1140px; max-height: 2000px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="/images/ma3seats.jpg" width="374" height="548" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title mt-5 text-center mb-3" >Get your Directions</h5>
+                    <form action="/route">
+                        <div class="mb-3">
+                            <label for="locationA" class="form-label mt-5">Your Current Location</label>
+                            <input type="text" class="form-control" id="locationA" >
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="locationB" class="form-label mt-5">Destination</label>
+                            <input type="text" class="form-control" id="locationB">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Go</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{/partial}}

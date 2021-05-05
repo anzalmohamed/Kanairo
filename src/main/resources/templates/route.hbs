@@ -1,0 +1,35 @@
+{{#partial "title" }}
+    Routes
+{{/partial}}
+
+
+{{#partial "content"}}
+
+    <h1 class="h1 mb-3 text-center"> Your Destination</h1>
+    {{#partial "title" }}
+        Your Destination
+    {{/partial}}
+
+
+    <div class="container-fluid" id="route">
+
+        <div class="row">
+            <div class="col-md-5">
+                <div class="route-img">
+                    <img src="./images/direction.jpg" id="project-2-img" class="card-img-top" alt="..." />
+                </div>
+            </div>
+            <div class="col-md-7 mt-3">
+                <div><h4 class="h4">From : </h4></div>
+                <!--                <img src="/images/arrow.png" width="34" height="44">-->
+                <div> <p>{{locationA}}</p> </div>
+                <div><h4 class="h4">To : </h4></div>
+
+                <div> <p>{{locationB}}</p></div>
+
+            </div>
+        </div>
+    </div>
+{{/partial}}
+
+{{> layout.hbs}
